@@ -64,7 +64,9 @@
           <h1 class="hero-title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Features -->
@@ -135,6 +137,9 @@
                 width="370"
                 height="294"
               />
+              <div class="service-label">
+                <p class="service-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="service-item">
               <img
@@ -143,6 +148,9 @@
                 width="370"
                 height="294"
               />
+              <div class="service-label">
+                <p class="service-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="service-item">
               <img
@@ -151,6 +159,9 @@
                 width="370"
                 height="294"
               />
+              <div class="service-label">
+                <p class="service-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -434,7 +445,7 @@
           </address>
         </div>
         <div class="join">
-          <h3 class="join-title">присоединяйтесь</h3>
+          <p class="join-title">присоединяйтесь</p>
           <ul class="join-list list">
             <li class="join-item">
               <a class="join-link link" href="">
@@ -468,5 +479,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
